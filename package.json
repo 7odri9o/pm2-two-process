@@ -1,0 +1,21 @@
+{
+  "name": "pm2-two-process",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:cron1": "node server.js cronName=cron1",
+    "start:cron2": "node server.js cronName=cron2",
+    "dev:cron1": "nodemon server --cronName=cron1",
+    "dev:cron2": "nodemon server --cronName=cron2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment-timezone": "^0.5.27",
+    "node-cron": "^2.0.3",
+    "pm2": "^4.2.1",
+    "winston": "^3.2.1"
+  }
+}

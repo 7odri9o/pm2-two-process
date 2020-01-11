@@ -1,0 +1,18 @@
+{
+  "apps": [{
+    "name": "cron1",
+    "script": "server.js",
+    "instance": 1,
+    "args": [
+      "--cronName=cron1"
+    ]
+  },
+  {
+    "name": "cron2",
+    "script": "server.js",
+    "instance": 1,
+    "args": [
+      "--cronName=cron2"
+    ]
+  }]
+}

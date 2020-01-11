@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  pm2-two-process:
+    build: .
+    container_name: pm2-two-process
+    volumes:
+      - .:/usr/src/app
+    networks:
+      network:
+        ipv4_address: 190.168.1.2
+
+networks:
+  network:
+    driver: bridge
+    ipam:
+     config:
+        - subnet: 190.168.1.0/24
